@@ -5,8 +5,7 @@ const size = Number(sizeArg);
 
 if (sizeArg === undefined || sizeArg.trim() === "" || isNaN(Number(sizeArg)) || !Number.isInteger(Number(sizeArg)) || Number(sizeArg) <= 0) {
     console.log("Invalid input");
-    process.exit();
-  }
+}
 
 for (let i = 0; i < size; i++) {
     let result = '';
