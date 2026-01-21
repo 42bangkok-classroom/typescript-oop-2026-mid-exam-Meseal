@@ -4,9 +4,10 @@ const inputRaw = process.argv[2];
 
 if (inputRaw === undefined || inputRaw.trim() === "" || isNaN(Number(inputRaw)) || !Number.isInteger(Number(inputRaw)) || Number(inputRaw) <= 0) {
   console.log("Invalid input");
+  process.exit();
 }
-else{
-    const input = Number(inputRaw);
+
+const input = Number(inputRaw);
 
 for (let i = 1; i < input; i++) {
   if (i % 3 === 0 && i % 5 === 0) {
@@ -19,6 +20,3 @@ for (let i = 1; i < input; i++) {
     console.log(i);
   }
 }
-
-}
-
