@@ -6,7 +6,7 @@ if(Number.isNaN(point) || !input){
   console.log('Invalid Input');
 }
 else if(point < 0 || point > 100){
-  console.log('Invalid Input');
+  console.log('Invalid input');
 }
 else{
   if(point >= 80){
