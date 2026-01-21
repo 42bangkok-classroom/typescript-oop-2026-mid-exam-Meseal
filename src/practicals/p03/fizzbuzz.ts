@@ -3,7 +3,6 @@ const inputRaw = process.argv[2];
 
 if (inputRaw === undefined || inputRaw.trim() === "" || isNaN(Number(inputRaw)) || !Number.isInteger(Number(inputRaw)) || Number(inputRaw) <= 0) {
   console.log("Invalid input");
-  process.exit(1);
 }
 
 const input = Number(inputRaw);
