@@ -15,8 +15,8 @@ for (let i = 0; i < size; i++) {
         result += ' '
     }
 
-    for (let j = 6; j > startNumber; j--) {
-        const currentNumber = j - startNumber;
+    for (let j = 0; j > startNumber; j++) {
+        const currentNumber = startNumber - j;
         result += currentNumber;
     }
     
