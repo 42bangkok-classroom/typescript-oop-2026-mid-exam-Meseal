@@ -1,2 +1,2 @@
 // Write your code below
-console.log('test')
+console.log('Hello Exam')
