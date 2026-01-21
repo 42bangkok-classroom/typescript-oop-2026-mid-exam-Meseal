@@ -4,7 +4,6 @@ const sizeArg = process.argv[2];
 const size = Number(sizeArg);
 
 if (sizeArg === undefined || sizeArg.trim() === "" || isNaN(Number(sizeArg)) || !Number.isInteger(Number(sizeArg)) || Number(sizeArg) <= 0) {
-    console.log("Invalid input");
 }
 
 for (let i = 0; i < size; i++) {
@@ -15,8 +14,8 @@ for (let i = 0; i < size; i++) {
         result += ' '
     }
 
-    for (let j = 0; j > startNumber; j++) {
-        const currentNumber = startNumber - j;
+    for (let j = startNumber-1 ; j < size ; j++) {
+        const currentNumber = size - j;
         result += currentNumber;
     }
     
